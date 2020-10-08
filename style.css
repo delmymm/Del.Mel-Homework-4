@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px;
+}
+body {
+    font-size: 25px;
+    padding: 5px;
+    color: black;
+  }
+  .start-box {
+    box-sizing: border-box;
+    margin: 5px;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+  }
+  .start-box p {
+    font-size: 16px;
+  }
+  .start-btn {
+    padding: 10px 10px;
+    background-color: purple ;
+    border-radius: 10px;
+    color: white; 
+  }
+  .btn {
+    background-color: purple ;
+    border-radius: 10px;
+    color: white;
+  }
