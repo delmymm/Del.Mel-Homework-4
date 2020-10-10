@@ -1,10 +1,14 @@
 var startScreen = document.querySelector('.start-box')
 var startButton = document.querySelector('.start-btn')
 var questionsEl = document.getElementById('question-container')
+var questions = document.getElementById('questions')
 var timerEl = document.querySelector('.timer')
+var highscore = document.getElementById('highscore')
+var currentQuestion;
 var time = 10;
 var availableQuestions = [];
-var questions = [
+var answer = [3, 3, 4, 4, 3];
+var questionsAnswers = [
     {
         question: "Commonly used data types do not include:",
         choices: ['Stings', 'Booleans', 'Alerts', 'Numbers'],
@@ -14,7 +18,7 @@ var questions = [
         question: "The condition in an if / else statement inclosed within:",
         choices: ['Quotes', 'Curly brackets', 'Parenthesis', 'Square brackets'],
         answer: 3
-    }
+    },
     {
         question: "Arrays in Javascript can be used to store:",
         choices: ['Numbers and strings', 'Other Arrays', 'Booleans', 'All the above'],
@@ -46,11 +50,17 @@ function timer() {
         timerEl.innerText = time
     }, 1000)
 }
-function setQuesitons() {
-    var totalQuestions = questions.length;
+function setAvailableQuestions() {
+    var totalQuestions = questionsAnswers.length;
     for (var i = 0; i < totalQuestions.length; i++) {
-
-        
+        availableQuestions.push(questionsAnswers[i])
     }
-    
 }
+function getNewQuestion() {
+    var questionIndex = availableQuestions[Math.floor(math.random() * availableQuestions.length)];
+    currentQuestion = questionIndex;
+    questions.innerHTML = currentQuestion
+}
+
+
+// highscore.style.display = 'none'; add once quiz ends
