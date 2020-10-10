@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="./style.css" />
         <title>Quiz</title>
     </head>
-    <div class="topnav">
-        <a href="">View Highscores</a>
-        <a style="float: right;">Time: </a>
-    </div>
 
     <body>
+        <div class="topnav">
+            <a href="">View Highscores</a>
+            <a style="float: right;">Time: <span class="timer"></span></a>
+        </div>
         <div class="start-box">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to asnwer the following code-related questions within the time limit. Keep in mind that incorrect
@@ -23,11 +23,6 @@
         <div id="question-container">
             <div id="questions">Question</div>
             <div id="answer-buttons" class="btn-grid">
-                <div class="timer">
-                    <div class="controls">
-                        <div class="time">
-                            <div id="seconds"></div>
-                        </div>
                         <div class="answer-buttons">
                             <button class="btn">1.</button>
                             <button class="btn">2.</button>
@@ -37,6 +32,7 @@
                         <div class="controls">
                             <button class="next-btn">Next</button>
                         </div>
+                        <script src="./script.js"></script>
     </body>
 
 </html>
