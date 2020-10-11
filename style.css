@@ -9,14 +9,18 @@ body {
     padding: 5px;
     color: black;
   }
-  .start-box {
-    box-sizing: border-box;
-    margin: 5px;
-    max-width: 500px;
+  .container-sm {
     text-align: center;
     align-items: center;
+    margin: 5px;
+    max-width: 500px;
+    position: relative;
   }
-  .start-box p {
+  .container-sm h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .container-sm p {
     font-size: 16px;
   }
   .start-btn {
@@ -25,11 +29,77 @@ body {
     border-radius: 10px;
     color: white; 
   }
-  .btn {
+  #btn1 {
     background-color: purple ;
     border-radius: 10px;
     color: white;
+    font-size: 16px;
   }
-  #question-container {
+  #btn2 {
+    background-color: purple ;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+  }
+  #btn3 {
+    background-color: purple ;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+  }
+  #btn4 {
+    background-color: purple ;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+  }
+  .question-card {
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    max-width: 500px;
+  }
+  #question-card {
     display: none;
+  }
+  #answer-buttons {
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    max-width: 500px;
+  }
+  #questions {
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 5px;
+    max-width: 500px;
+  }
+  .submit-btn {
+    padding: 10px 10px;
+    background-color: purple ;
+    border-radius: 10px;
+    color: white; 
+  }
+  #highscore {
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    max-width: 500px;
+    position: relative;
+  }
+  .goback-btn {
+    padding: 10px 10px;
+    background-color: purple ;
+    border-radius: 10px;
+    color: white; 
+  }
+  #next-btn {
+    padding: 10px 10px;
+    background-color: purple ;
+    border-radius: 10px;
+    color: white; 
+  }
+  #btns-list {
+    list-style-type: none;
   }
